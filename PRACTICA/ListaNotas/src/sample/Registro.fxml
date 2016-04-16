@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<!--suppress XmlPathReference -->
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="350.0" prefWidth="450.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="23.0" layoutY="62.0" prefHeight="31.0" prefWidth="137.0" text="NOMBRE" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="23.0" layoutY="113.0" prefHeight="31.0" prefWidth="137.0" text="NOTA" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="91.0" layoutY="14.0" prefHeight="31.0" prefWidth="269.0" text="REGISTRO DE NOTA" textAlignment="CENTER" underline="true">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txnombre" layoutX="193.0" layoutY="62.0" prefHeight="31.0" prefWidth="173.0" />
+            <TextField fx:id="txnota" layoutX="193.0" layoutY="113.0" prefHeight="31.0" prefWidth="173.0" />
+            <Button fx:id="btn1" layoutX="277.0" layoutY="209.0" mnemonicParsing="false" onAction="#cambiopantalla" prefHeight="55.0" prefWidth="137.0" text="LISTA">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn2" layoutX="56.0" layoutY="209.0" mnemonicParsing="false" onAction="#guardar" prefHeight="55.0" prefWidth="137.0" text="GUARDAR">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <ListView fx:id="test" layoutX="67.0" layoutY="264.0" prefHeight="90.0" prefWidth="296.0" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>
